@@ -107,12 +107,24 @@
     <ClCompile Include="..\src\lua\lzio.c">
       <Filter>Lua</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\DockingFeature\StaticDialog.cpp" />
+    <ClCompile Include="..\src\StaticDialog\StaticDialog.cpp" />
+    <ClCompile Include="..\src\language_mapping.cpp" />
+    <ClCompile Include="..\src\DropTarget.cpp" />
+    <ClCompile Include="..\src\DPIManager.cpp" />
+    <ClCompile Include="..\src\ResultDock.cpp" />
+    <ClCompile Include="..\src\Encoding.cpp" />
+    <ClCompile Include="..\src\LanguageManager.cpp" />
+    <ClCompile Include="..\src\ConfigManager.cpp" />
+    <ClCompile Include="..\src\IniFileCache.cpp" />
+    <ClCompile Include="..\src\UndoRedoManager.cpp" />
+    <ClCompile Include="..\src\MultiReplacePanel_BatchUI.cpp" />
+    <ClCompile Include="..\src\StringUtils.cpp" />
+    <ClCompile Include="..\src\ColumnTabs.cpp" />
+    <ClCompile Include="..\src\NumericToken.cpp" />
+    <ClCompile Include="..\src\NppStyleKit.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\AboutDialog.h" />
-    <ClInclude Include="..\src\DockingFeature\resource.h" />
-    <ClInclude Include="..\src\DockingFeature\StaticDialog.h" />
     <ClInclude Include="..\src\MultiReplacePanel.h" />
     <ClInclude Include="..\src\Notepad_plus_msgs.h" />
     <ClInclude Include="..\src\PluginDefinition.h" />
@@ -200,14 +212,40 @@
     <ClInclude Include="..\src\lua\lzio.h">
       <Filter>Lua</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\StaticDialog\resource.h" />
+    <ClInclude Include="..\src\StaticDialog\StaticDialog.h" />
+    <ClInclude Include="..\src\DropTarget.h" />
+    <ClInclude Include="..\src\DPIManager.h" />
+    <ClInclude Include="..\src\luaEmbedded.h" />
+    <ClInclude Include="..\src\image_data.h" />
+    <ClInclude Include="..\src\HiddenSciGuard.h" />
+    <ClInclude Include="..\src\StaticDialog\Docking.h" />
+    <ClInclude Include="..\src\ResultDock.h" />
+    <ClInclude Include="..\src\Encoding.h" />
+    <ClInclude Include="..\src\LanguageManager.h" />
+    <ClInclude Include="..\src\ConfigManager.h" />
+    <ClInclude Include="..\src\IniFileCache.h" />
+    <ClInclude Include="..\src\language_mapping.h" />
+    <ClInclude Include="..\src\UndoRedoManager.h" />
+    <ClInclude Include="..\src\BatchUIGuard.h" />
+    <ClInclude Include="..\src\StringUtils.h" />
+    <ClInclude Include="..\src\ColumnTabs.h" />
+    <ClInclude Include="..\src\NumericToken.h" />
+    <ClInclude Include="..\src\NppStyleKit.h" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\src\DockingFeature\resource.rc" />
     <ResourceCompile Include="..\src\MultiReplace.rc" />
+    <ResourceCompile Include="..\src\StaticDialog\resource.rc" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Lua">
       <UniqueIdentifier>{eea5a33f-b441-48dd-b95a-67ee554383a6}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\help_use_variables_light.html" />
+    <None Include="..\languages.ini" />
+    <None Include="..\help_use_variables_dark.html" />
+    <None Include="..\README.md" />
   </ItemGroup>
 </Project>
